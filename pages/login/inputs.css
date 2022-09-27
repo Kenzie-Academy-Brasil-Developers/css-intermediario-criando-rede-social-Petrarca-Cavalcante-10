@@ -1,0 +1,6 @@
+.login-card input {
+    min-width: var(--input-width-1);
+    min-height: var(--input-heigth-1);
+    padding: var(--input-padding-1);
+    border: var(--generic-border-1);
+}

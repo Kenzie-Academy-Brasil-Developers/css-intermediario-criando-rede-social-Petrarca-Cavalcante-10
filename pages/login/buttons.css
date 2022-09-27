@@ -1,0 +1,12 @@
+main button {
+    width: var(--button-width-1);
+    height: var(--button-heigth-1);
+    border-radius: var(--radius-1);
+}
+
+.login-submit {
+    background-color: var(--color-blue-1);
+    color: var(--color-white-fixed);
+    border: var(--border-transparent);
+    margin-top: 12px;
+}
