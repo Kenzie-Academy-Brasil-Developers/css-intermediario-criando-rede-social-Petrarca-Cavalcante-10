@@ -1,0 +1,41 @@
+.feed-news {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.profile-card-organizer {
+
+}
+
+.post-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.post-title {
+    font-size: 24px;
+}
+
+.post-content {
+    font-size: 16px;
+    font-weight: 400px;
+    margin-bottom: 15px;
+}
+
+.post-data {
+    margin-top: 6px;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+
+.likes-count {
+    display: flex;
+    gap: 10px;
+}

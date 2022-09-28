@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    gap: 30px;
+
+}
+
+

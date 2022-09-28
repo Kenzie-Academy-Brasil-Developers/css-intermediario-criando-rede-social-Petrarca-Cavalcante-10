@@ -4,6 +4,8 @@
     width: 100vw;
     padding: 11px;
     position: fixed;
+
+    overflow-y: visible;
 }
 
 .navbar-items{

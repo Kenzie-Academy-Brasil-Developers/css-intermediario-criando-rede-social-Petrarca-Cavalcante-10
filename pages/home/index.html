@@ -1,19 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Home</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-  </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/globalStyles.css" />
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="./newpost.css">
+  <link rel="stylesheet" href="/pages/home/followSuggest.css">
+  <link rel="stylesheet" href="/pages/home/buttons.css">
+  <link rel="stylesheet" href="/pages/home/feed-posts.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>TechPosters - Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" style="background-color: rgba(0, 0, 0, 0.4);">
+      <div class="navbar-items">
+        <img src="/assets/img/logo.svg" alt="logo TechPosters" srcset="">
+        <div class="navbar-links">
+          <button class="navbar-link">sair</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="feed-post">
+      <div class="new-post-section">
+        <div class="profile-card-organizer">
+          <figure class="profile-photo-wrapper">
+            <img class="sug-profile-photo post-profile-photo" src="/assets/img/user7.svg" alt="">
+          </figure>
+          <div class="profile-description post-profile-desc">
+            <h3>Samuel Persuhn</h3>
+            <p>Frontend Engineer</p>
+          </div>
+        </div>
+      </div>
+      <div class="new-post-content">
+        <input class="new-post-title" type="text" name="" id="" placeholder="Digitar título do post">
+        <textarea class="new-post-text" name="" id="" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+        <button class="confirm-new-post">Postar</button>
+      </div>
+    </section>
+
+    <section class="follow-suggestions">
+      <h3>Sugestões para você seguir</h3>
+      <ul id="ulSuggestions" class="follow-suggestions-list">
+      </ul>
+    </section>
+
+    <section class="feed-news">
+      <h2>Posts</h2>  
+      <article class="post-card">
+        <div class="profile-card-organizer">
+          <figure class="profile-photo-wrapper">
+            <img class="sug-profile-photo post-profile-photo" src="/assets/img/user2.svg" alt="">
+          </figure>
+        
+          <div class="profile-description post-profile-desc">
+            <h3>Samuel Persuhn</h3>
+            <p>Frontend Engineer</p>
+          </div>
+        </div>
+        
+        <div class="post-details">
+          <h5 class="post-title">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h5>
+          <p class="post-content">A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.</p>
+        </div>
+
+        <div class="post-data">
+          <div class="post-buttons">
+          <button class="open-post" id="2">Abrir Post</button>
+          <div class="likes-count">
+          <figure>
+            <img src="/assets/img/heart.svg" alt="" srcset="">
+          </figure>
+          <p>25</p>
+          </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="profile-card-organizer">
+          <figure class="profile-photo-wrapper">
+            <img class="sug-profile-photo post-profile-photo" src="/assets/img/user4.svg" alt="">
+          </figure>
+        
+          <div class="profile-description post-profile-desc">
+            <h3>Carla Maria</h3>
+            <p>Back end Engineer</p>
+          </div>
+        </div>
+        
+        <div class="post-details">
+          <h5 class="post-title">Programa de estágio abre vagas em Segurança da Informação com regime remoto</h5>
+          <p class="post-content">Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica. O candidato interessado deverá estar matriculado em um curso superior em Ciência da Computação, Segurança da Informação, Tecnologia da Informação e afins, com previsão de conclusão do curso de fevereiro de 2023 a fevereiro de 2025.</p>
+        </div>
+
+        <div class="post-data">
+          <div class="post-buttons">
+          <button class="open-post" id="4">Abrir Post</button>
+          <div class="likes-count">
+          <figure>
+            <img src="/assets/img/heart.svg" alt="" srcset="">
+          </figure>
+          <p>25</p>
+          </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="profile-card-organizer">
+          <figure class="profile-photo-wrapper">
+            <img class="sug-profile-photo post-profile-photo" src="/assets/img/user5.svg" alt="">
+          </figure>
+        
+          <div class="profile-description post-profile-desc">
+            <h3>Júlia Martins</h3>
+            <p>Devop's</p>
+          </div>
+        </div>
+        
+        <div class="post-details">
+          <h5 class="post-title">O que é programação orientada a objetos e programação funcional</h5>
+          <p class="post-content">A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.</p>
+        </div>
+
+        <div class="post-data">
+          <div class="post-buttons">
+          <button class="open-post" id="5">Abrir Post</button>
+          <div class="likes-count">
+          <figure>
+            <img src="/assets/img/heart.svg" alt="" srcset="">
+          </figure>
+          <p>25</p>
+          </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+<script src="/script/database/posts.js"></script>
+<script src="/script/database/sugestUsers.js"></script>
+<script src="./feed.js"></script>
+<script src="./index.js"></script>
+
 </html>

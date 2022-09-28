@@ -27,10 +27,15 @@
     --button-width-1: 90%;
     --button-heigth-1: 40px; 
     
-    
+    --button-width-2: 75px;
+    --button-heigth-2: 35px;
+
+    --button-width-3: 15%;
+    --button-heigth-3: 13px;
 
     --border-transparent: 1px solid transparent;
-    --generic-border-1: solid 2px var(--color-grey-4) ;
+    --generic-border-1: solid 2px var(--color-grey-4);
+    --generic-border-2: solid 2px var(--color-grey-1);
 }
 
 body{

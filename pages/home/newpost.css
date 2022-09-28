@@ -1,0 +1,45 @@
+.profile-card-organizer {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.post-profile-desc {
+    padding-left: 6px;
+}
+
+.post-profile-desc h3 {
+    font-size: 17px;
+}
+
+.post-profile-desc p {
+    font-size: 12px;
+}
+
+.feed-post {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.new-post-title {
+    border: 2px solid var(--color-grey-4);
+    padding: 4px 8px;
+    font-family: var(--font-family-1);
+    height: 30px;
+    border-radius: var(--radius-1);
+}
+
+.new-post-text {
+    border: 2px solid var(--color-grey-4);
+    padding: 4px 8px;
+    font-family: var(--font-family-1);
+    border-radius: var(--radius-1);
+}
+
+.new-post-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px
+}
+

@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Cadastro</title>
-  </head>
-  <body>
-    <nav></nav>
-    <main>
-      <form></form>
-    </main>
-  </body>
-  <script src="/script/visualComponents/modal.js"></script>
-  <script src="/script/visualComponents/navbar.js"></script>
-  <script src="index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/styles/globalStyles.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/genericButtons.css">
+  <link rel="stylesheet" href="/pages/resgister/buttons.css">
+
+  <title>TechPosters - Cadastro</title>
+</head>
+
+<body>
+  <nav class="navbar" style="background-color: rgba(0, 0, 0, 0.4);">
+    <div class="navbar-items">
+      <img src="/assets/img/logo.svg" alt="logo TechPosters" srcset="">
+      <div class="navbar-links">
+        <button class="navbar-link">Login</button>
+        <button class="navbar-link">Registro</button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="register-header">
+      <h2>Cadastro</h2>
+      <button class="login-return close-register">voltar</button>
+    </div>
+    <form>
+      <ul class="register-wrapper">
+        <li class="register-info">
+          <label for="register-name" hidden>Digite seu nome</label>
+          <input id="register-name" type="text" placeholder="Seu nome">
+        </li>
+        <li class="register-info">
+          <label for="register-email" hidden>Seu email</label>
+          <input id="" type="email" placeholder="Seu e-mail">
+        </li>
+        <li class="register-info">
+          <label for="register-password" hidden>Sua senha</label>
+          <input id="register-password" type="text" placeholder="Sua senha">
+        </li>
+        <li class="register-info">
+          <label for="register-occupation" hidden>Seu trabalho</label>
+          <input id="register-occupation" type="text" placeholder="Qual o seu trabalho?">
+        </li>
+        <li class="register-info">
+          <label for="url-profile-img-register" hidden>URL da imagem de perfil</label>
+          <input id="url-profile-img-register" type="text" placeholder="URL da imagem de perfil">
+        </li>
+      </ul>
+      <button class="register-btn">Registrar</button>
+    </form>
+    <p class="login-ask">Já possui login?</p>
+    <button class="login-return">Ir para página de login</button>
+  </main>
+</body>
+<script src="/script/visualComponents/modal.js"></script>
+<script src="/script/visualComponents/navbar.js"></script>
+<script src="index.js"></script>
+
 </html>

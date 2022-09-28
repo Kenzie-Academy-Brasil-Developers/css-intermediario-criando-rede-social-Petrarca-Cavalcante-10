@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-grey-4);
+}
+main {
+    background-color: var(--color-white-fixed);
+    border-radius: var(--radius-1);
+    display: flex;
+    flex-direction: column;
+
+    gap: 17px;
+
+    padding: 40px 24px;
+    width: 90vw;
+    height: fit-content;
+    margin-top: 15vh;
+}
+
+.register-header {
+    display: flex;
+    justify-content: space-between;
+}

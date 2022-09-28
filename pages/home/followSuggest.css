@@ -1,0 +1,38 @@
+.follow-suggestions-list {
+    overflow-x: scroll;
+    height: fit-content;
+    display: flex;
+    gap: 3px;
+    margin: 18px 0;
+    width: 90vw;
+}
+
+.profile-card {
+    min-width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 4px;
+
+    margin: 25px 0;
+}
+
+.profile-card-organizer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-description {
+    width: 75%;
+    height: 70%;  
+}
+
+.profile-photo-wrapper {
+    width: fit-content;
+    height: 50px;
+}
+
+.sug-profile-photo {
+    width: 43px;
+}
