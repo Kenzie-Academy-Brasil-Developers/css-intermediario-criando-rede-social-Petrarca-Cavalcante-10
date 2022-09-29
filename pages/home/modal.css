@@ -5,6 +5,7 @@
     height: 300vh;
     max-width: 100%;
     top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,9 +19,29 @@
     position: sticky;
     top: 60px;
     border-radius: var(--radius-1);
+
+}
+
+@media(min-width: 800px){
+    .modal-card {
+        max-width: 50%;
+        height: fit-content;
+        padding-bottom: 15px;
+    }
 }
 
 .modal-profile-card-organizer {
     width: 100%;
     margin: 20px 0 10px ;
+}
+
+@media(min-width: 800px) {
+
+}
+
+
+@media(min-width: 800px) {
+    .close-modal{
+        left: 250px;
+    }
 }
