@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/pages/home/followSuggest.css">
   <link rel="stylesheet" href="/pages/home/buttons.css">
   <link rel="stylesheet" href="/pages/home/feed-posts.css">
+  <link rel="stylesheet" href="/pages/home/modal.css">
   <link rel="stylesheet" href="style.css" />
   <title>TechPosters - Home</title>
 </head>
@@ -26,6 +27,7 @@
       </div>
     </nav>
   </header>
+  <div class="general-main">
   <main>
     <section class="feed-post">
       <div class="new-post-section">
@@ -46,11 +48,14 @@
       </div>
     </section>
 
-    <section class="follow-suggestions">
+    <div class="desk-view">
+    <aside class="follow-suggestions">
       <h3>Sugestões para você seguir</h3>
+      <div class="desktop-slider">
       <ul id="ulSuggestions" class="follow-suggestions-list">
       </ul>
-    </section>
+      </div>
+    </aside>
 
     <section class="feed-news">
       <h2>Posts</h2>  
@@ -68,12 +73,12 @@
         
         <div class="post-details">
           <h5 class="post-title">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h5>
-          <p class="post-content">A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.</p>
+          <p class="post-content">A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de...</p>
         </div>
 
         <div class="post-data">
           <div class="post-buttons">
-          <button class="open-post" id="2">Abrir Post</button>
+          <button class="open-post" id="2" name="1">Abrir Post</button>
           <div class="likes-count">
           <figure>
             <img src="/assets/img/heart.svg" alt="" srcset="">
@@ -98,12 +103,12 @@
         
         <div class="post-details">
           <h5 class="post-title">Programa de estágio abre vagas em Segurança da Informação com regime remoto</h5>
-          <p class="post-content">Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica. O candidato interessado deverá estar matriculado em um curso superior em Ciência da Computação, Segurança da Informação, Tecnologia da Informação e afins, com previsão de conclusão do curso de fevereiro de 2023 a fevereiro de 2025.</p>
+          <p class="post-content">Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de...</p>
         </div>
 
         <div class="post-data">
           <div class="post-buttons">
-          <button class="open-post" id="4">Abrir Post</button>
+          <button class="open-post" id="4" name="2">Abrir Post</button>
           <div class="likes-count">
           <figure>
             <img src="/assets/img/heart.svg" alt="" srcset="">
@@ -128,12 +133,12 @@
         
         <div class="post-details">
           <h5 class="post-title">O que é programação orientada a objetos e programação funcional</h5>
-          <p class="post-content">A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.</p>
+          <p class="post-content">A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional...</p>
         </div>
 
         <div class="post-data">
           <div class="post-buttons">
-          <button class="open-post" id="5">Abrir Post</button>
+          <button class="open-post" id="5" name="3">Abrir Post</button>
           <div class="likes-count">
           <figure>
             <img src="/assets/img/heart.svg" alt="" srcset="">
@@ -144,7 +149,9 @@
         </div>
       </article>
     </section>
+    </div>
   </main>
+  </div>
 </body>
 <script src="/script/database/posts.js"></script>
 <script src="/script/database/sugestUsers.js"></script>

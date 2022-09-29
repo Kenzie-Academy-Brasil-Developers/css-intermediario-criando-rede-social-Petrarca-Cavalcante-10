@@ -3,6 +3,12 @@
     margin-top: 8px;
 }
 
+@media(min-width: 800px) {
+    .feed-news{
+        width: 550px;
+    }
+}
+
 .profile-card-organizer {
 
 }
@@ -38,4 +44,14 @@
 .likes-count {
     display: flex;
     gap: 10px;
+}
+
+aside{
+}
+
+@media(min-width: 1200px) {
+    aside{
+        position: absolute;
+        top: 60px;
+    }
 }

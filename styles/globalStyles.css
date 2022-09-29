@@ -17,6 +17,7 @@
 
     
     --radius-1: 0.25rem;
+    --radius-3: 1.25rem;
     --font-family-1: "Inter", sans-serif;
     --font-size-5: 12px;
     
@@ -32,6 +33,7 @@
 
     --button-width-3: 15%;
     --button-heigth-3: 13px;
+    --button-heigth-4: 26px;
 
     --border-transparent: 1px solid transparent;
     --generic-border-1: solid 2px var(--color-grey-4);

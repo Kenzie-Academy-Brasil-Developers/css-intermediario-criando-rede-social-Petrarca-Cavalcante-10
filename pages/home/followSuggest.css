@@ -1,3 +1,24 @@
+
+@media(min-width: 800px) {
+    .follow-suggestions{
+        position: sticky;
+        top: 10px;
+    }
+}
+
+.desktop-slider{
+height: fit-content;
+}
+
+@media(min-width: 1200px) {
+    .desktok-slider{
+        min-height: 200vh;
+        position: absolute;
+        top: 10px;
+    }
+}
+
+
 .follow-suggestions-list {
     overflow-x: scroll;
     height: fit-content;
@@ -5,6 +26,17 @@
     gap: 3px;
     margin: 18px 0;
     width: 90vw;
+}
+
+@media(min-width: 800px) {
+    .follow-suggestions-list {
+        display: flex;
+        max-width: 330px;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;  
+        position: sticky;      
+    }
 }
 
 .profile-card {
@@ -16,6 +48,16 @@
     padding-left: 4px;
 
     margin: 25px 0;
+}
+
+@media(min-width: 800px) {
+    .profile-card{
+        max-width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .profile-card-organizer {

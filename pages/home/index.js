@@ -1,5 +1,5 @@
 let ulSu = document.getElementById('ulSuggestions')
-const users = [
+const usersss = [
     {
         id: 1,
         user: "Samuel Leão",
@@ -73,4 +73,4 @@ function renderSuggestions(users) {
     }
 }
 
-renderSuggestions(users)
+renderSuggestions(usersss)

@@ -1,5 +1,5 @@
 //Posts dos usuários
-const posts = [
+const postss = [
   {
     id_post: 1, //id único de cada post
     user: 2, //id do usuário que fez o post, você pode acessa-lo no array users

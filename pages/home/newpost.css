@@ -43,3 +43,10 @@
     gap: 20px
 }
 
+@media(min-width: 800px) {
+    .new-post-content{
+        max-width: 550px;
+        
+    }
+}
+

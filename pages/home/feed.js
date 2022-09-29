@@ -1,62 +1,138 @@
-let openPostBtn = document.querySelectorAll('open-post')
-let bodySelect = document.getElementsByTagName('body')
-
-function renderModal(userId) {
-
-    for (let i = 0; i < users.length; i++) {
-        if (userId == i) {
-            let greyBackground = document.createElement('div')
-            let modalCard = document.createElement('div')
-            let profileBox = document.createElement('div')
-            let divContainer = document.createElement('div')
-            let figCreator = document.createElement('figure')
-            let imgCreator = document.createElement('img')
-            let divDesc = document.createElement('div')
-            let userName = document.createElement('h3')
-            let userDesc = document.createElement('p')
-            
-            let modalTitle = document.createElement('h4')
-            let modalText = document.createElement('p')
-
-            greyBackground.classList.add("grey-backgroud")
-            modalCard.classList.add("modal-card")
-
-            modalTitle.classList.add("post-title")
-            modalText.classList.add("post-content")
-
-            divContainer.classList.add('profile-card-organizer')
-            figCreator.classList.add("profile-photo-wrapper")
-            imgCreator.classList.add("sug-profile-photo")
-            profileBox.classList.add('profile-card')
-            divDesc.classList.add('profile-description')
-
-            imgCreator.src = users[i].img
-            userName.innerText = users[i].user
-            userDesc.innerText = users[i].stack
-
-            modalTitle.innerText = 
-
-            figCreator.append(imgCreator)
-            divDesc.append(userName, userDesc)
-    
-            divContainer.append(figCreator, divDesc)
-            profileBox.append(divContainer)
-            modalCard.append(profileBox)
-            greyBackground.append(modalCard)
-            bodySelect.append(greyBackground)
-            
-        }
-    }
-}
+let openPostBtn = document.querySelectorAll('.open-post')
+let bodySelect = document.querySelector('.general-main')
+const posts = [
+    {
+        id_post: 1, //id único de cada post
+        user: 2, //id do usuário que fez o post, você pode acessa-lo no array users
+        //título do post
+        title:
+            "Empresa de Tecnologia da Informação abre vagas para programa de estágio",
+        //texto do post
+        text: "A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.",
+    },
+    {
+        id_post: 2,
+        user: 4,
+        title:
+            "Programa de estágio abre vagas em Segurança da Informação com regime remoto",
+        text: "Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica. O candidato interessado deverá estar matriculado em um curso superior em Ciência da Computação, Segurança da Informação, Tecnologia da Informação e afins, com previsão de conclusão do curso de fevereiro de 2023 a fevereiro de 2025.",
+    },
+    {
+        id_post: 3,
+        user: 5,
+        title: "O que é programação orientada a objetos e programação funcional",
+        text: "A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.",
+    },
+];
+const users = [
+    {
+      id: 1,
+      user: "Samuel Leão",
+      stack: "Front end Engineer",
+      img: "../../assets/img/user1.svg",
+    },
+    {
+      id: 2,
+      user: "Samuel Persuhn",
+      stack: "Front end Engineer",
+      img: "../../assets/img/user2.svg",
+    },
+    {
+      id: 3,
+      user: "Carlos Lima",
+      stack: "UX e UI Designer",
+      img: "../../assets/img/user3.svg",
+    },
+    {
+      id: 4,
+      user: "Carla Maria",
+      stack: "Back end Engineer",
+      img: "../../assets/img/user4.svg",
+    },
+    {
+      id: 5,
+      user: "Júlia Martins",
+      stack: "Devop's",
+      img: "../../assets/img/user5.svg",
+    },
+    {
+      id: 6,
+      user: "Filipe Gutierry",
+      img: "../../assets/img/user7.svg",
+    },
+    {
+      id: 7,
+      user: "Samuel Persuhn",
+      img: "../../assets/img/user6.svg",
+    },
+];
+  
 
 function findPoster() {
-    for (let j = 0; j < posts.length; j++) {
-        openPostBtn.addEventListener('click', (event) => {
+ let userIdBtn = 0
+ let postIdBtn = 0
+    for (let i = 0; i < openPostBtn.length; i++) {
+        openPostBtn[i].addEventListener('click', (event) => {
             event.preventDefault()
-            if (users.id == posts[j].user) {
-                renderModal(users.id)
-            }
+            userIdBtn = parseInt(openPostBtn[i].id)
+            postIdBtn = parseInt(openPostBtn[i].name)
+            renderModal(userIdBtn -1, postIdBtn - 1)
         })
     }
 
+}
+findPoster()
+
+function renderModal(userId, postId) {
+    let greyBackground = document.createElement('div')
+    let modalCard = document.createElement('div')
+    let profileBox = document.createElement('div')
+    let divContainer = document.createElement('div')
+    let figCreator = document.createElement('figure')
+    let imgCreator = document.createElement('img')
+    let closeModalBtn = document.createElement('button')
+    closeModalBtn.addEventListener('click', (event)=> {
+        event.preventDefault()
+        greyBackground.remove()
+    })
+
+    let divDesc = document.createElement('div')
+    let userName = document.createElement('h3')
+    let userDesc = document.createElement('p')
+
+    let modalTextArea = document.createElement('div')
+    let modalTitle = document.createElement('h6')
+    let modalText = document.createElement('p')
+
+    greyBackground.classList.add("grey-background")
+    modalCard.classList.add("modal-card")
+    closeModalBtn.classList.add("close-modal")
+
+    modalTextArea.classList.add("post-details")
+    modalTitle.classList.add("post-title")
+    modalText.classList.add("post-content")
+
+    divContainer.classList.add("profile-card-organizer", "modal-profile-card-organizer")
+    figCreator.classList.add("profile-photo-wrapper")
+    imgCreator.classList.add("sug-profile-photo")
+    profileBox.classList.add("profile-card")
+    divDesc.classList.add("profile-description")
+
+    imgCreator.src = users[userId].img
+    userName.innerText = users[userId].user
+    userDesc.innerText = users[userId].stack
+    closeModalBtn.innerText = "X"
+
+    modalTitle.innerText = posts[postId].title
+    modalText.innerText = posts[postId].text
+
+    figCreator.append(imgCreator)
+    divDesc.append(userName, userDesc)
+    modalTextArea.append(modalTitle, modalText)
+
+    divContainer.append(figCreator, divDesc, closeModalBtn)
+    profileBox.append(divContainer)
+    modalCard.append(profileBox, modalTextArea)
+    greyBackground.append(modalCard)
+    bodySelect.append(greyBackground)
 }
