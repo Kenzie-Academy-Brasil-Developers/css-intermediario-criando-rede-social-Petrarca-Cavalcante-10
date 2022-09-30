@@ -32,9 +32,8 @@ main {
     .desk-view{
         width: 80vw;
         display: flex;
-        justify-content: space-between;    
+        justify-content: flex-end;    
         flex-direction: row-reverse;
-        
     }
 }
 

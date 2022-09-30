@@ -20,6 +20,11 @@
     flex-direction: column;
     width: 80vw;
 }
+@media(min-width: 800px){
+    .feed-post {
+
+    }
+}
 
 .new-post-title {
     border: 2px solid var(--color-grey-4);

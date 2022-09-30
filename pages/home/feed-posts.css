@@ -6,6 +6,7 @@
 @media(min-width: 800px) {
     .feed-news{
         width: 550px;
+
     }
 }
 
@@ -49,9 +50,4 @@
 aside{
 }
 
-@media(min-width: 1200px) {
-    aside{
-        position: absolute;
-        top: 60px;
-    }
-}
+
